@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--Matyas Fenyves-->
+<html>
+	<head>
+		<title>Concentration</title>
+		<style>
+			body
+			{
+				margin-left:25% ;
+				margin-right:25% ;
+			}
+			
+		</style>
+		<script type = "text/javascript" src = "playingcards.js">
+		</script>
+		<script>
+			function storedVariables()
+			{
+				imgs = document.getElementsByTagName("img") ;
+				numFlipped = 0 ;
+				CARDBACK =  "back-blue-75-3.png" ;
+				
+				
+				makeTheDeck() ;
+			}
+			function makeTheDeck()
+			{
+				deck = generateStandardDeck() ;
+				deck = shuffle(deck) ;
+				
+			}
+			function flipCard(card)
+			{
+				
+				numFlipped++ ;
+				if(numFlipped == 2)
+				{
+					setTimeout("unFlipCards()",1500) ;
+					//return ;
+				}
+				if(numFlipped > 2)
+				return ;
+				imgs[card].src = extractCardData(deck[card],IMAGE) ;
+				
+				
+				
+			}
+			function unFlipCards()
+			{
+				for(i = 0 ; i < deck.length ; i++)
+				{
+					imgs[i].src = CARDBACK ;
+				}
+				numFlipped = 0 ;
+			}
+		</script>
+	</head>
+	<body onload = "storedVariables() ;">
+		<div id = "cardDiv">
+			<img id = "card1" onclick = "flipCard(0) ;" src = "back-blue-75-3.png" />
+			<img id = "card2" onclick = "flipCard(1) ;" src = "back-blue-75-3.png" />
+			<img id = "card3" onclick = "flipCard(2) ;" src = "back-blue-75-3.png" />
+			<img id = "card4" onclick = "flipCard(3) ;" src = "back-blue-75-3.png" />
+			<img id = "card5" onclick = "flipCard(4) ;" src = "back-blue-75-3.png" />
+			<img id = "card6" onclick = "flipCard(5) ;" src = "back-blue-75-3.png" />
+			<img id = "card7" onclick = "flipCard(6) ;" src = "back-blue-75-3.png" />
+			<img id = "card8" onclick = "flipCard(7) ;" src = "back-blue-75-3.png" />
+			<img id = "card9" onclick = "flipCard(8) ;" src = "back-blue-75-3.png" />
+			<img id = "card10" onclick = "flipCard(9) ;" src = "back-blue-75-3.png" />
+			<img id = "card11" onclick = "flipCard(10) ;" src = "back-blue-75-3.png" />
+			<img id = "card12" onclick = "flipCard(11) ;" src = "back-blue-75-3.png" />
+			<img id = "card13" onclick = "flipCard(12) ;" src = "back-blue-75-3.png" />
+			<img id = "card14" onclick = "flipCard(13) ;" src = "back-blue-75-3.png" />
+			<img id = "card15" onclick = "flipCard(14) ;" src = "back-blue-75-3.png" />
+			<img id = "card16" onclick = "flipCard(15) ;" src = "back-blue-75-3.png" />
+			<img id = "card17" onclick = "flipCard(16) ;" src = "back-blue-75-3.png" />
+			<img id = "card18" onclick = "flipCard(17) ;" src = "back-blue-75-3.png" />
+			<img id = "card19" onclick = "flipCard(18) ;" src = "back-blue-75-3.png" />
+			<img id = "card20" onclick = "flipCard(19) ;" src = "back-blue-75-3.png" />
+			<img id = "card21" onclick = "flipCard(20) ;" src = "back-blue-75-3.png" />
+			<img id = "card22" onclick = "flipCard(21) ;" src = "back-blue-75-3.png" />
+			<img id = "card23" onclick = "flipCard(22) ;" src = "back-blue-75-3.png" />
+			<img id = "card24" onclick = "flipCard(23) ;" src = "back-blue-75-3.png" />
+			<img id = "card25" onclick = "flipCard(24) ;" src = "back-blue-75-3.png" />
+			<img id = "card26" onclick = "flipCard(25) ;" src = "back-blue-75-3.png" />
+			<img id = "card27" onclick = "flipCard(26) ;" src = "back-blue-75-3.png" />
+			<img id = "card28" onclick = "flipCard(27) ;" src = "back-blue-75-3.png" />
+			<img id = "card29" onclick = "flipCard(28) ;" src = "back-blue-75-3.png" />
+			<img id = "card30" onclick = "flipCard(29) ;" src = "back-blue-75-3.png" />
+			<img id = "card31" onclick = "flipCard(30) ;" src = "back-blue-75-3.png" />
+			<img id = "card32" onclick = "flipCard(31) ;" src = "back-blue-75-3.png" />
+			<img id = "card33" onclick = "flipCard(32) ;" src = "back-blue-75-3.png" />
+			<img id = "card34" onclick = "flipCard(33) ;" src = "back-blue-75-3.png" />
+			<img id = "card35" onclick = "flipCard(34) ;" src = "back-blue-75-3.png" />
+			<img id = "card36" onclick = "flipCard(35) ;" src = "back-blue-75-3.png" />
+			<img id = "card37" onclick = "flipCard(36) ;" src = "back-blue-75-3.png" />
+			<img id = "card38" onclick = "flipCard(37) ;" src = "back-blue-75-3.png" />
+			<img id = "card39" onclick = "flipCard(38) ;" src = "back-blue-75-3.png" />
+			<img id = "card40" onclick = "flipCard(39) ;" src = "back-blue-75-3.png" />
+			<img id = "card41" onclick = "flipCard(40) ;" src = "back-blue-75-3.png" />
+			<img id = "card42" onclick = "flipCard(41) ;" src = "back-blue-75-3.png" />
+			<img id = "card43" onclick = "flipCard(42) ;" src = "back-blue-75-3.png" />
+			<img id = "card44" onclick = "flipCard(43) ;" src = "back-blue-75-3.png" />
+			<img id = "card45" onclick = "flipCard(44) ;" src = "back-blue-75-3.png" />
+			<img id = "card46" onclick = "flipCard(45) ;" src = "back-blue-75-3.png" />
+			<img id = "card47" onclick = "flipCard(46) ;" src = "back-blue-75-3.png" />
+			<img id = "card48" onclick = "flipCard(47) ;" src = "back-blue-75-3.png" />
+			<img id = "card49" onclick = "flipCard(48) ;" src = "back-blue-75-3.png" />
+			<img id = "card50" onclick = "flipCard(49) ;" src = "back-blue-75-3.png" />
+			<img id = "card51" onclick = "flipCard(50) ;" src = "back-blue-75-3.png" />
+			<img id = "card52" onclick = "flipCard(51) ;" src = "back-blue-75-3.png" />
+		</div>
+		
+	</body>
+</html>
